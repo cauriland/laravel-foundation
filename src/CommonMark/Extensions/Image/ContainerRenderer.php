@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+namespace CauriLand\Foundation\CommonMark\Extensions\Image;
+
+use League\CommonMark\Util\HtmlElement;
+
+final class ContainerRenderer
+{
+    /** @phpstan-ignore-next-line */
+    public static function render($content, $title): \Stringable|string|null
+    {
+        /* @phpstan-ignore-next-line */
+        if (empty($title)) {
+            return $content;
+        }
+
+        $container = new HtmlElement('div', ['class' => 'image-container'], '', true);
+        $title     = new HtmlElement('span', ['class' => 'image-caption'], $title, true);
+
+        return $container->setContents([$content, $title]);
+    }
+}
