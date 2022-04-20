@@ -1,0 +1,130 @@
+{
+    "name": "cauriland/foundation",
+    "description": "User-Interface Scaffolding for Laravel. Powered by TailwindCSS.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arsel Tindo",
+            "email": "devtnga@gmail.com"
+        },
+        {
+            "name": "ItsANameToo",
+            "email": "itsanametoo@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "calebporzio/sushi": "^2.3",
+        "danharrin/livewire-rate-limiting": "^0.3",
+        "elgigi/commonmark-emoji": "^2.0",
+        "ergebnis/phpstan-rules": "^1.0",
+        "fakerphp/faker": "^1.16",
+        "friendsofphp/php-cs-fixer": "^3.3",
+        "google/recaptcha": "^1.2",
+        "graham-campbell/analyzer": "^3.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/bus": "^8.73",
+        "illuminate/contracts": "^8.73",
+        "illuminate/http": "^8.73",
+        "illuminate/mail": "^8.73",
+        "illuminate/support": "^8.73",
+        "illuminate/view": "^8.73",
+        "jasonmccreary/laravel-test-assertions": "^2.0",
+        "jenssegers/agent": "^2.6",
+        "johnkary/phpunit-speedtrap": "^4.0",
+        "laravel/fortify": "^1.8",
+        "league/commonmark": "^2.0",
+        "livewire/livewire": "^2.8",
+        "mockery/mockery": "^1.4",
+        "nunomaduro/collision": "^5.10",
+        "nunomaduro/larastan": "^1.0",
+        "nunomaduro/laravel-mojito": "^0.2",
+        "orchestra/testbench": "^6.23",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-faker": "^1.0",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "pestphp/pest-plugin-livewire": "^1.0",
+        "pestphp/pest-plugin-parallel": "^1.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.2",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-strict-rules": "^1.1",
+        "phpunit/phpunit": "^9.5",
+        "pragmarx/google2fa-laravel": "^2.0",
+        "rector/rector": "^0.12",
+        "ruafozy/mersenne-twister": "^1.3",
+        "savvot/random": "^0.3",
+        "spatie/laravel-flash": "^1.8",
+        "spatie/laravel-honeypot": "^4.0",
+        "spatie/laravel-medialibrary": "^9.9",
+        "spatie/laravel-newsletter": "^4.10",
+        "spatie/laravel-package-tools": "^1.9",
+        "spatie/laravel-personal-data-export": "^3.0",
+        "spatie/laravel-schemaless-attributes": "^2.1",
+        "spatie/pest-plugin-snapshots": "^1.1",
+        "spatie/regex": "^3.1",
+        "spatie/yaml-front-matter": "^2.0",
+        "teamtnt/laravel-scout-tntsearch-driver": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CauriLand\\Foundation\\": "src/"
+        },
+        "files": [
+            "src/UserInterface/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CauriLand\\Foundation\\Providers\\FoundationServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "scripts": {
+        "format": [
+            "vendor/bin/php-cs-fixer fix"
+        ],
+        "test": [
+            "./vendor/bin/pest"
+        ],
+        "test:fast": [
+            "./vendor/bin/pest --parallel"
+        ],
+        "test:coverage": [
+            "./vendor/bin/pest --coverage --min=100 --coverage-html=.coverage --coverage-clover=coverage.xml"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "require-dev": {
+        "laravel/nova": "^3.30",
+        "spatie/laravel-permission": "^3.16",
+        "vyuldashev/nova-permission": "^3.0"
+    },
+    "suggest": {
+        "laravel/nova": "Needed for backend management of data",
+        "spatie/laravel-permission": "Needed for nova permissions & roles",
+        "vyuldashev/nova-permission": "Needed for nova permissions & roles"
+    }
+}
