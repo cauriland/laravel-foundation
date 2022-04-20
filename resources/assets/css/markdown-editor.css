@@ -1,0 +1,77 @@
+/** UI Repo Styles **/
+@import "_buttons.css";
+@import "_animations.css";
+
+/* purgecss start ignore */
+@import "@toast-ui/editor/dist/toastui-editor.css";
+
+.cauri-markdown-editor .ProseMirror {
+    @apply p-5 h-full text-theme-secondary-700 dark:text-theme-secondary-500;
+}
+
+/* Line number */
+@screen md {
+    .cauri-markdown-editor.with-line-numbers .ProseMirror {
+        @apply pl-18;
+    }
+
+    .cauri-markdown-editor.with-line-numbers
+        .toastui-editor-main-container:before {
+        content: "";
+        @apply border-l border-theme-secondary-200 absolute h-full block ml-13 mt-5 dark:border-theme-secondary-700;
+        height: calc(100% - 2.5rem);
+    }
+
+    .cauri-markdown-editor.with-line-numbers .ProseMirror > div {
+        counter-increment: line;
+    }
+
+    .cauri-markdown-editor.with-line-numbers .ProseMirror > div:before {
+        content: counter(line);
+        @apply p-0 text-xs text-center text-theme-secondary-500 w-11 absolute -ml-16 flex justify-end pr-5 items-center;
+    }
+}
+
+.cauri-markdown-editor .toastui-editor-defaultUI {
+    @apply border-none;
+}
+
+.cauri-markdown-editor .toastui-editor-tabs {
+    display: none;
+}
+
+.cauri-markdown-editor .toastui-editor-defaultUI-toolbar {
+    @apply bg-white border-none relative;
+}
+
+.cauri-markdown-editor .toastui-editor-defaultUI-toolbar:before {
+    content: "";
+    @apply border-b border-theme-secondary-200 absolute w-full block ml-5 bottom-0 left-0;
+    width: calc(100% - 2.5rem);
+}
+
+.cauri-markdown-editor .toastui-editor-toolbar {
+    @apply h-auto;
+}
+
+.cauri-markdown-editor .toastui-editor-toolbar:not(.cauri-markdown-editor-toolbar) {
+    @apply h-auto;
+    /* @apply h-0 overflow-visible; */
+}
+.cauri-markdown-editor .toastui-editor-defaultUI {
+    @apply block;
+}
+
+.cauri-markdown-editor .toastui-editor-defaultUI-toolbar {
+    @apply hidden;
+}
+
+.cauri-markdown-editor .toastui-editor-popup {
+    top: auto !important;
+}
+
+.cauri-markdown-editor .toastui-editor-toolbar-icons {
+    @apply bg-none;
+}
+
+/* purgecss end ignore */

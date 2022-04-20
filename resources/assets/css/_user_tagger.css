@@ -1,0 +1,20 @@
+/* purgecss start ignore */
+.cauri-user-tagger .highlighted .cauri-user-tagger--username {
+    @apply text-theme-primary-600;
+}
+.cauri-user-tagger > ul > li {
+    @apply mx-6;
+}
+.cauri-user-tagger > ul > li:not(:last-child) {
+    @apply border-b border-dotted border-theme-secondary-300;
+}
+
+.cauri-user-tagger > ul > li.highlighted {
+    @apply px-6 mx-0 border-transparent bg-theme-primary-100;
+}
+
+.cauri-user-tagger--input [contenteditable="true"]:empty:before {
+    @apply text-theme-secondary-400;
+    content: attr(data-placeholder);
+}
+/* purgecss end ignore */
