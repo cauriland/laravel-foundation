@@ -3,17 +3,17 @@
 declare(strict_types=1);
 
 return [
-    'discord-msq'   => 'https://marketsquare.io/discord',
+    // 'discord-msq'   => 'https://marketsquare.io/discord',
     'twitter'       => 'https://twitter.cauri.cm/',
-    'linkedin'      => 'https://www.linkedin.com/company/cauriland',
+    'linkedin'      => 'https://linkedin.cauri.cm/',
     'facebook'      => 'https://facebook.cauri.cm/',
     'youtube'       => 'https://youtube.cauri.cm/',
-    'github'        => 'https://github.com/CauriLand',
-    'telegram'      => 'https://t.me/arkannouncements',
+    'github'        => 'https://github.com/cauriland',
+    'telegram'      => 'https://t.me/cauriland',
     'documentation' => 'https://dev.cauri.cm',
-    'cauri'           => 'https://cauri.cm/',
-    'deployer'      => 'https://deployer.io/',
-    'nodem'         => 'https://nodem.io/',
-    'protokol'      => 'https://www.protokol.com/',
-    'marketsquare'  => 'https://marketsquare.io/',
+    'cauri'         => 'https://cauri.cm/',
+    // 'deployer'      => 'https://deployer.io/',
+    // 'nodem'         => 'https://nodem.io/',
+    // 'protokol'      => 'https://www.protokol.com/',
+    // 'marketsquare'  => 'https://marketsquare.io/',
 ];
