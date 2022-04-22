@@ -21,6 +21,6 @@
 }
 
 .cauri-logo-red {
-    @apply text-theme-danger-500;
+    @apply text-theme-danger-600;
     --icon-color-secondary: #ffffff;
 }

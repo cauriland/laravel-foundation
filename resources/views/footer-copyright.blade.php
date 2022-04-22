@@ -1,6 +1,6 @@
 @props([
     'isCauriProduct'  => true,
-    'copyText'      => 'cauri.cm | ' . trans('ui::general.all_rights_reserved'),
+    'copyText'      => 'CauriLand | ' . trans('ui::general.all_rights_reserved'),
     'copyrightSlot' => null,
 ])
 
@@ -20,7 +20,7 @@
                             class="inline-block mr-1 -mt-1 cauri-logo-red"
                         />
 
-                        An <a href="https://cauri.cm/" class="underline hover:no-underline focus-visible:rounded">cauri.cm</a> @lang('ui::generic.product')
+                        A <a href="https://cauri.cm/" class="underline hover:no-underline focus-visible:rounded">Cauri.cm</a> @lang('ui::generic.product')
                     </span>
                 </div>
             @endif
