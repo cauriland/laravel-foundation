@@ -1,7 +1,7 @@
 # Laravel Foundation
 
 <p align="center">
-    <img src="/banner.png" />
+    <img src="https://github.com/cauriland/laravel-foundation/raw/main/banner.png" />
 </p>
 
 > Scaffolding for Laravel. Powered by TailwindCSS and Livewire.
