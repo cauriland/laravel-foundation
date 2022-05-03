@@ -255,6 +255,7 @@ class UserInterfaceServiceProvider extends ServiceProvider
             $blade->component('cauri::divider', 'cauri-divider');
             $blade->component('cauri::documentation', 'cauri-documentation');
             $blade->component('cauri::dropdown', 'cauri-dropdown');
+            $blade->component('cauri::dropdown-accordion', 'cauri-dropdown-accordion');
             $blade->component('cauri::expandable', 'cauri-expandable');
             $blade->component('cauri::expandable-item', 'cauri-expandable-item');
             $blade->component('cauri::external-link', 'cauri-external-link');
