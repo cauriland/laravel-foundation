@@ -299,6 +299,7 @@ class UserInterfaceServiceProvider extends ServiceProvider
             $blade->component('cauri::status-circle', 'cauri-status-circle');
             $blade->component('cauri::svg-lazy', 'cauri-svg-lazy');
             $blade->component('cauri::toast', 'cauri-toast');
+            $blade->component('cauri::separator', 'cauri-separator');
             $blade->component('cauri::shapes.line', 'cauri-placeholder-line');
             $blade->component('cauri::shapes.square', 'cauri-placeholder-square');
             $blade->component('cauri::link-collection', 'cauri-link-collection');
