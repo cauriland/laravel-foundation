@@ -29,13 +29,27 @@
     >
 
         @if ($icon && $iconAlignment === 'left')
-            <x-cauri-icon class="{{ $isCurrent || $active ? 'text-theme-primary-600 dark:text-theme-secondary-200' : 'text-theme-primary-300 dark:text-theme-secondary-600 group-hover:text-theme-primary-600' }} mr-1 flex-shrink-0 transition-default" :name="$icon" />
+            <x-cauri-icon
+                :class="Arr::toCssClasses([
+                    'mr-1 flex-shrink-0 transition-default',
+                    'text-theme-primary-600 dark:text-theme-secondary-200' => $isCurrent || $active,
+                    'text-theme-primary-300 dark:text-theme-secondary-600 group-hover:text-theme-primary-600' => ! $isCurrent || $active,
+                ])"
+                :name="$icon"
+            />
         @endif
 
         <span>{{ $name }}</span>
 
         @if ($icon && $iconAlignment === 'right')
-            <x-cauri-icon class="{{ $isCurrent || $active ? 'text-theme-primary-600 dark:text-theme-secondary-200' : 'text-theme-primary-300 dark:text-theme-secondary-600 group-hover:text-theme-primary-600' }} flex-shrink-0 transition-default" :name="$icon" />
+            <x-cauri-icon
+                :class="Arr::toCssClasses([
+                    'flex-shrink-0 transition-default',
+                    'text-theme-primary-600 dark:text-theme-secondary-200' => $isCurrent || $active,
+                    'text-theme-primary-300 dark:text-theme-secondary-600 group-hover:text-theme-primary-600' => ! $isCurrent || $active,
+                ])"
+                :name="$icon"
+            />
         @endif
     </a>
 </div>

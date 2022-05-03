@@ -222,8 +222,14 @@ class UserInterfaceServiceProvider extends ServiceProvider
             $blade->component('cauri::inputs.upload-image-collection', 'cauri-upload-image-collection');
             $blade->component('cauri::inputs.tags', 'cauri-tags');
 
-            $blade->component('cauri::pages.contact', 'cauri-pages-contact');
+            $blade->component('cauri::docs.edit-page', 'cauri-docs-edit-page');
+            $blade->component('cauri::docs.last-updated', 'cauri-docs-last-updated');
+            $blade->component('cauri::docs.navigation', 'cauri-docs-navigation');
+            $blade->component('cauri::docs.share-links', 'cauri-docs-share-links');
+            $blade->component('cauri::docs.sidebar-group', 'cauri-docs-sidebar-group');
+            $blade->component('cauri::docs.sidebar-link', 'cauri-docs-sidebar-link');
 
+            $blade->component('cauri::pages.contact', 'cauri-pages-contact');
             $blade->component('cauri::pages.includes.cookie-banner', 'cauri-pages-includes-cookie-banner');
             $blade->component('cauri::pages.includes.header', 'cauri-pages-includes-header');
             $blade->component('cauri::pages.includes.layout-body', 'cauri-pages-includes-layout-body');
